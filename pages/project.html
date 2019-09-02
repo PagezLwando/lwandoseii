@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
+  <link rel="shortcut icon" href="../images/favicon.ico"/>
+  <link href="http://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="http://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" type="text/css" href="../css/styles.css">
+  <script src="../js/jquery.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
+  <style>
+img.wp-smiley,
+img.emoji {
+  display: inline !important;
+  border: none !important;
+  box-shadow: none !important;
+  height: 1em !important;
+  width: 1em !important;
+  margin: 0 .07em !important;
+  vertical-align: -0.1em !important;
+  background: none !important;
+  padding: 0 !important;
+}
+   hr.style-eight {
+height: 5px;
+border: 1px;
+box-shadow: inset 0 9px 9px -3px rgba(11, 99, 184, 0.8);
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+-ms-border-radius: 5px;
+-o-border-radius: 5px;
+border-radius: 5px;
+}
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                   
+      </button>
+      <a class="navbar-brand" href="#myPage">NODUMELWANDO</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="../index.html">HOME</a></li>
+        <li><a href="../pages/project.html">PROJECT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="jumbotron text-center">
+  <h1>Lwando Nodume</h1> 
+  <h5 style="font-size: 24px;"> Website & Software Developer </h5> 
+  <form class="form-inline">
+    <input type="text" class="form-control" size="25" placeholder="Search..." required>
+    <button type="button" class="btn btn-default glyphicon glyphicon-search"></button>
+  </form>
+</div>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <h2>GROUP MEMBERS</h2>
+  <hr class="style-eight" />
+  <h4>SOFTWARE ENGINEERING II</h4>
+  <br><a href="../index.html"><p class="btn btn-primary btn-lg">Go to Home</p></a>
+  <br>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <h4>Mduduzi Mbuthuma</h4>
+      <p><img src="../images/mduh.jpg" alt="logo" height="150" width="150" class="img-circle"></p>
+    </div>
+    <div class="col-sm-4">
+      <h4>Zizo Maduna</h4>
+      <p><img src="../images/zizo.jpg" alt="logo" height="150" width="150" class="img-circle"></p>
+    </div>
+    <div class="col-sm-4">
+      <h4>Mpumelelo Zungu</h4>
+      <p><img src="../images/html-css.png" alt="logo" height="150" width="150" class="img-circle"></p>
+    </div>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4">
+      <h4>Momelezi Tshezi</h4>
+      <p><img src="../images/meez.jpg" alt="logo" height="150" width="150" class="img-circle"></p>
+    </div>
+    <div class="col-sm-4">
+      <h4>Lwando Nodume</h4>
+      <p><img src="../images/me.jpg" alt="logo" height="150" width="150" class="img-circle"></p>
+    </div>
+    <div class="col-sm-4">
+      <h4>none</h4>
+    </div>
+  </div>
+</div>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+   
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+    });
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+<br>
+<br>
+  <!-- Footer -->
+     <footer class="footer container-fluid text-center">
+      <a href="#myPage" title="To Top">
+        <span class="roundchervon glyphicon glyphicon-chevron-up"></span>
+      </a>
+      <div>
+        <span>Developed by <a href="https://nodumeholdings.000webhostapp.com" target="_blank">NodumeLwando.inc</a></span>
+          <br>
+          <span >Nodume Technologies &copy; Copyright 2018.</span><br>
+          <span><a href="#">Privacy Policy</a> | <a href="#">Terms of use</a></span>
+      </div>
+    <div>
+      <a href="#"><span class="fa fa-twitter-square" style="font-size:24px;"></span></a>
+          <a href="#"><span class="fa fa-facebook-square" style="font-size:24px"></span></a>
+          <a href="#"><span class="fa fa-pinterest-square" style="font-size:24px"></span></a>
+          <a href=""><span class="fa fa-youtube-square" style="font-size:24px"></span></a>
+          <a href="#"><span class="fa fa-instagram" style="font-size:24px"></span></a>
+    </div>
+  </footer>
+  <br>
+</body>
+</html>
